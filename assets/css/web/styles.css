@@ -1,0 +1,350 @@
+ /* @import url('../_shered/common.css');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.faq-question {
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    padding-left: 1em;
+}
+
+/* Estilos para o formulário de login */
+/* form {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+form label span {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+form input[type="email"],
+form input[type="password"],
+form input[type="text"]{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    background-color: #0056b3;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #004494;
+} */
+/* Estilos Globais */
+
+
+
+
+
+
+
+
+@import url('../_shered/common.css');
+
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Fonte moderna */
+    background-color: #f1f1e7; /* Bege pastel */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    width: 100%;
+    background-color: #D8BFD8; /* Roxo pastel */
+    padding: 20px 0;
+    text-align: center;
+    color: #4B0082; /* Roxo escuro */
+}
+
+header h1 {
+    font-size: 3rem; /* Aumentar o tamanho do título */
+    margin: 0;
+    color: #4B0082; /* Roxo escuro */
+    font-weight: 600; /* Fonte em negrito */
+}
+
+/* Estilo do Container Principal */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #984ad0; /* Roxo pastel */
+    padding: 30px; /* Diminuir o padding */
+    border-radius: 12px; /* Diminuir o arredondamento */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Diminuir o sombreado */
+    margin-top: 40px;
+    width: 90%; /* Diminuir a largura ocupada */
+    max-width: 1200px; /* Diminuir o limite máximo da largura */
+    border: 2px solid #D8BFD8; /* Manter a borda */
+}
+
+/* Estilo do Container de Texto */
+.text-container {
+    flex: 3; /* Aumentar a proporção do texto */
+    padding-right: 30px; /* Diminuir o espaçamento à direita */
+}
+
+h2 {
+    text-align: left; /* Alinhar à esquerda */
+    margin-bottom: 20px; /* Diminuir a margem inferior */
+    font-size: 1.8rem; /* Diminuir o tamanho do subtítulo */
+    color: #f5eff9; /* Roxo escuro */
+    font-weight: 600; /* Negrito para os subtítulos */
+}
+
+p {
+    color: #eae3ef; /* Roxo escuro */
+    font-size: 1.1rem; /* Diminuir o tamanho do texto */
+    line-height: 1.6; /* Diminuir o espaçamento entre linhas */
+    margin-bottom: 15px; /* Diminuir a margem inferior */
+    text-align: justify;
+    font-weight: 300; /* Peso mais leve para o corpo do texto */
+}
+
+/* Estilo do Botão */
+button {
+    display: block;
+    width: 100%;
+    padding: 15px; /* Diminuir o padding do botão */
+    background-color: #D8BFD8; /* Roxo pastel */
+    color: #4B0082; /* Roxo escuro */
+    border: none;
+    border-radius: 8px; /* Manter o arredondamento do botão */
+    cursor: pointer;
+    font-size: 1.2rem; /* Diminuir o tamanho da fonte do botão */
+    margin-top: 20px; /* Diminuir a margem superior */
+    font-weight: 600; /* Negrito no botão */
+}
+
+button:hover {
+    background-color: #C3A9D8; /* Roxo pastel mais escuro */
+}
+
+/* Estilo do Container da Imagem */
+.image-container {
+    flex: 1.5; /* Diminuir a proporção da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 80%; /* Diminuir o tamanho máximo da imagem */
+    height: auto;
+    border-radius: 12px; /* Diminuir o arredondamento da imagem */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Diminuir o sombreado da imagem */
+}
+
+/* Estilos para o Navbar */
+#navbar {
+    background-color: #D8BFD8; /* Roxo pastel */
+    color: #4B0082; /* Roxo escuro */
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    width: 100%;
+}
+
+#navbar a {
+    color: #4B0082; /* Roxo escuro */
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; /* Fonte consistente */
+    font-weight: 600; /* Negrito para os links */
+}
+
+#navbar a:hover {
+    text-decoration: underline; /* Adicionar sublinhado ao passar o mouse */
+}
+
+/* Estilos para o Conteúdo */
+.content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Estilo do Rodapé */
+footer {
+    background-color: #D8BFD8; /* Roxo pastel */
+    color: #4B0082; /* Roxo escuro */
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Poppins', sans-serif; /* Fonte consistente */
+    font-weight: 300; /* Peso mais leve para o texto do rodapé */
+}
+
+/* Estilo do FAQ */
+/* Estilos gerais para o contêiner FAQ */
+.faq {
+    background-color: #ffffff; /* Fundo branco para as FAQs */
+    border: 1px solid #D8BFD8; /* Borda sutil */
+    border-radius: 8px; /* Arredondamento das bordas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombreamento leve */
+    margin: 1rem 0; /* Espaçamento entre as FAQs */
+    padding: 1.5rem; /* Espaçamento interno */
+    transition: all 0.3s ease; /* Transição suave para efeitos */
+}
+
+/* Estilo da pergunta */
+.faq-question {
+    font-size: 1.6rem; /* Tamanho da fonte maior */
+    color: #4B0082; /* Roxo escuro */
+    cursor: pointer; /* Mudança de cursor para indicar interatividade */
+    margin: 0; /* Remover margens */
+}
+
+/* Estilo da resposta */
+.faq-answer {
+    font-size: 1.2rem; /* Tamanho da fonte para a resposta */
+    color: #333; /* Cor cinza escuro */
+    margin-top: 0.5rem; /* Espaçamento acima da resposta */
+    display: none; /* Inicialmente escondido */
+}
+
+/* Estilo para hover na pergunta */
+.faq-question:hover {
+    color: #D8BFD8; /* Mudança de cor ao passar o mouse */
+}
+
+/* Estilo para mostrar a resposta ao expandir */
+.faq.active .faq-answer {
+    display: block; /* Exibir resposta quando ativo */
+}
+
+/* Estilos para o Container do Formulário de Login */
+.login-container,
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ocupa a altura total da tela */
+    background-color: #f1f1e7; /* Fundo que combina com o fundo do formulário */
+    padding: 2rem;
+}
+
+
+/* Estilos para o Formulário de Login e Registro */
+.formLogin {
+    max-width: 500px; /* Tamanho máximo do formulário */
+    width: 100%; /* Ocupa toda a largura disponível dentro do container */
+    padding: 2.5rem; /* Espaçamento interno */
+    background-color: #ffffff; /* Cor de fundo do formulário */
+    border-radius: 12px; /* Arredondamento das bordas */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombreamento para destaque */
+    border: 1px solid #D8BFD8; /* Borda sutil */
+}
+
+/* Estilo das Labels */
+.formLogin label {
+    display: block;
+    margin-bottom: 1.5rem; /* Espaçamento entre labels */
+}
+
+.formLogin label span {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #4B0082; /* Roxo escuro */
+    font-weight: 600; /* Negrito para os labels */
+}
+
+/* Estilo dos Inputs */
+.formLogin input[type="text"],
+.formLogin input[type="email"],
+.formLogin input[type="password"] {
+    width: 100%;
+    padding: 1rem; /* Conforto ao digitar */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Alinhado com o estilo dos inputs do login */
+}
+
+/* Estilo do Botão do Formulário */
+.formLogin button {
+    display: block;
+    width: 100%;
+    padding: 1rem; /* Aumentado o padding para maior conforto */
+    margin-top: 1.5rem; /* Espaçamento acima do botão */
+    background-color: #D8BFD8; /* Roxo pastel */
+    color: #4B0082; /* Roxo escuro */
+    border: none;
+    border-radius: 8px; /* Arredondamento do botão */
+    cursor: pointer;
+    font-size: 1.4rem; /* Tamanho da fonte ajustado */
+    font-weight: 600; /* Negrito no texto do botão */
+}
+
+.formLogin button:hover {
+    background-color: #C3A9D8; /* Roxo pastel mais escuro para hover */
+}
+
+
